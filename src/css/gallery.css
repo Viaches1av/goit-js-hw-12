@@ -1,0 +1,90 @@
+section {
+  text-align: center;
+  padding: 0 20px;
+}
+
+#searchInput {
+  padding: 10px;
+  font-size: 16px;
+  color: #808080;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  resize: 1px solid;
+  outline: none;
+}
+#searchInput:hover {
+  border: 1px solid #000;
+}
+#searchInput:focus {
+  border: 1px solid #4e75ff;
+}
+#searchButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #6c8cff;
+}
+
+/* //////////////////////////////// */
+
+.gallery {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #808080;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.04);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item .info {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #fff;
+  color: #2e2f42;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info p {
+  margin: 0;
+  text-align: center;
+}
+
+#loadMoreButton{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  margin-top: 32px;
+  border: none;
+}
+#loadMoreButton:hover{
+  background-color: #6c8cff;
+}
